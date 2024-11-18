@@ -1,0 +1,106 @@
+body {
+  background-color: gainsboro;
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+  display: block;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.sqr {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border: 4px solid black;
+  font-size: 64px;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: top;
+  background-color: white;
+  margin: 5px 0;
+  box-shadow: 0 0 0 3px black; 
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+button {
+  margin: -2px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px black;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#scoreCounter {
+  display: flex;
+  justify-content: center;
+}
+
+.scoreWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px; 
+}
+
+.scoreWrapper:last-child {
+  margin-right: 0;
+}
+
+.scoreLabel {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#xScorring, #oScorring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border: 4px solid black;
+  width: 50px;
+  height: 50px;
+  font-size: 21px;
+}
